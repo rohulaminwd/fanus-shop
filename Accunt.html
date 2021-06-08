@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All product Redsrore</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="naver">
+            <div class="logo">
+                <h3> <a href="Index.html">FANUS SHOP</a></h3>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li> <a href="Index.html">home</a></li>
+                <li> <a href="Product.html">Products</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="ContactUS.html">Contact</a></li>
+                <li> <a href="Accunt.html">Account</a></li>
+                <i class="fa fa-cart"></i>
+              </ul>
+            </nav>
+            <a href="Chart.html"><img src="Image/chart.png" width="16px" height="20px"></a>
+            <img src="Image/manu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!-----------accunt page--------------> 
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Image/Rohulamin.png" width="100%">
+            </div>
+
+            <div class="col-2">
+               <div class="form-container">
+                   <div class="form-btn">
+                       <span onclick="Login()">Login</span>
+                       <span onclick="register()">Register</span>
+                       <hr id="Indicator">
+                   </div> 
+
+                   <form id="LoginForm">
+                       <input type="text" placeholder="Username">
+                       <input type="password" placeholder="password">
+                       <button type="submit" class="btn">Login</button>
+                       <a href="">Forgot password</a>
+                   </form>
+
+                   <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="Email" placeholder="email">
+                    <input type="Password" placeholder="password">
+                    <button type="submit" class="btn">Register</button>
+                    
+                   </form>
+               </div>
+               <div class="marl">
+               <div class="social-icons">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!--------fotter-------->
+
+<footer>
+    <div class="main-content">
+        <div class="left box">
+           <h2>About Us</h2>
+           <div class="content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, velit.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/rohulaminmia.rohulamin">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/RahulSorkar5?s=09">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/rohulamin0605/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://m.me/rohulaminmia.rohulamin">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="tel:01831294559">
+                 <i class="fa fa-phone"></i>
+                </a>
+            </div>
+           </div>
+        </div>
+
+        <div class="center box ">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fa fa-map-marker"></span>
+                    <span class="text">Batkuci Nalitabari Sharpur</span>
+                </div>
+                <div class="phone">
+                   <span class="fa fa-phone"></span>
+                   <span class="text">01831294559</span>
+               </div>
+               <div class="email">
+                   <span class="fa fa-envelope"></span>
+                   <span class="text">rohulamin@gmail.com</span>
+               </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>Contact US</h2>
+            <div class="conttent">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="smg">
+                        <div class="tex">Message</div>
+                        <textarea name="" id="" cols="25" rows="2" required></textarea>
+                    </div>
+                    <div class="bt">
+                        <button class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+       </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Easy Tutorials</p>
+</footer>
+ 
+<!------js for toggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+     
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+<!--js for foggle form-->
+
+<script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+       
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function Login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+</script>
+
+</body>
+</html>

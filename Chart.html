@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All product Redsrore</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="naver">
+            <div class="logo">
+                <h3> <a href="Index.html">FANUS SHOP</a></h3>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li> <a href="Index.html">home</a></li>
+                <li> <a href="Product.html">Products</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="ContactUS.html">Contact</a></li>
+                <li> <a href="Accunt.html">Account</a></li>
+                <i class="fa fa-cart"></i>
+              </ul>
+            </nav>
+            <a href="Chart.html"><img src="Image/chart.png" width="16px" height="20px"></a>
+            <img src="Image/manu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!------cart items details------->
+
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Image/Fanus2.jpg" >
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: Tk-60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Tk-60.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Image/Fanus4.jpg" >
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: Tk-60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Tk-60.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Image/Fanus6.jpg" >
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: Tk-60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Tk-60.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Tk-200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Tk-65.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Tk-65.00</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </div>
+
+<!--------fotter-------->
+
+<footer>
+    <div class="main-content">
+        <div class="left box">
+           <h2>About Us</h2>
+           <div class="content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, velit.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/rohulaminmia.rohulamin">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/RahulSorkar5?s=09">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/rohulamin0605/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://m.me/rohulaminmia.rohulamin">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="tel:01831294559">
+                 <i class="fa fa-phone"></i>
+                </a>
+            </div>
+           </div>
+        </div>
+
+        <div class="center box ">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fa fa-map-marker"></span>
+                    <span class="text">Batkuci Nalitabari Sherpur</span>
+                </div>
+                <div class="phone">
+                   <span class="fa fa-phone"></span>
+                   <span class="text">01831294559</span>
+               </div>
+               <div class="email">
+                   <span class="fa fa-envelope"></span>
+                   <span class="text">rohulamin@gmail.com</span>
+               </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>Contact US</h2>
+            <div class="conttent">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="smg">
+                        <div class="tex">Message</div>
+                        <textarea name="" id="" cols="25" rows="2" required></textarea>
+                    </div>
+                    <div class="bt">
+                        <button class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+       </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Easy Tutorials</p>
+</footer>
+
+<!------js for toggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+     
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+</body>
+</html>
